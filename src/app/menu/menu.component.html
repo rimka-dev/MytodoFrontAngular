@@ -19,6 +19,7 @@
                     <a class="nav-link active" routerLink="/accueil" aria-current="page" href="#">Accueil</a>
                     <a class="nav-link active" routerLink=""  href="#">Formations</a>
                     <a class="nav-link active" routerLink="/contact" href="#">Contact</a>
+                    <a *ngIf="this.authService.isAdmin()" class="nav-link active"  href="#">Admin</a>
                     <!-- <div >
                         <a  class="nav-link active" routerLink="/admin" href="#">Compte</a>
                         <a   class="nav-link active" routerLink="/admin" href="#">Admin</a>
