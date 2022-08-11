@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 class="text-center mt-5">Creer votre compte</h1>
+    <form #fRegister="ngForm" class="mb-3" (ngSubmit)="registerForm(user)" (submit)="reset(fRegister)">
+        <div class="mb-3">
+            <label for="userName" class="form-label">User name</label>
+            <input type="text" class="form-control" [(ngModel)]="user.username" name="username" id="userName">
+        </div>
+        <div class="mb-3">
+            <label for="adresse" class="form-label">Adresse</label>
+            <input type="text" class="form-control" [(ngModel)]="user.adress" name="adress" id="adresse">
+        </div>
+        <div class="mb-3">
+            <label for="ville" class="form-label">Ville</label>
+            <input type="text" class="form-control" [(ngModel)]="user.ville" name="ville" id="ville">
+        </div>
+        <div class="mb-3">
+            <label for="codePostal" class="form-label">Code postal</label>
+            <input type="text" class="form-control" [(ngModel)]="user.cp" name="cp" id="codePostal">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label is-invalid">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="user.email" name="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Votre email est confidentiel il ne sera pas partager</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" [(ngModel)]="user.password" name="password" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a class="mt-4" routerLink="/login">J'ai déja un compte! </a>
+</div>

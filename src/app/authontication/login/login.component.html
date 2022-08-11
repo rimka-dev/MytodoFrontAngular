@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="text-center">Login</h1>
+    <form #f="ngForm" (ngSubmit)="onLogin(f.value)"  (submit)="reset(f)">
+        <div class="mb-3">
+          <label for="username" class="form-label">User name</label>
+          <input type="text" class="form-control" name="username" ngModel id="username" >
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" ngModel id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+
+</div>

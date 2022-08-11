@@ -1,0 +1,28 @@
+.matodo{
+    padding: 8px;
+    background-image: url("../../assets/blocNote.jpg");
+    border-radius: 20px ;
+    width: auto;
+    height: 500px;
+    box-shadow: 5px 7px 15px 1px rgba(0,0,0,0.48);
+}
+.matodo h2{
+    margin-bottom: 27px;
+    margin-top: 20px;
+}
+.matodo p{
+    font-weight: bold;
+    font-size:larger;
+    text-align: center;
+    margin-left: 65px;
+}
+
+.item{
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+form{
+    margin-bottom: 10px;
+}
